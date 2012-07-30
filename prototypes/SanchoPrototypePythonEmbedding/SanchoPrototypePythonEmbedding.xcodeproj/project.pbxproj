@@ -1,0 +1,221 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		034BDDB815C6555B00E1B4FB /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 034BDDB715C6555B00E1B4FB /* main.c */; };
+		034BDDBA15C6555B00E1B4FB /* SanchoPrototypePythonEmbedding.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 034BDDB915C6555B00E1B4FB /* SanchoPrototypePythonEmbedding.1 */; };
+		034BDDC115C6559200E1B4FB /* Python.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 034BDDC015C6559200E1B4FB /* Python.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		034BDDB115C6555B00E1B4FB /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				034BDDBA15C6555B00E1B4FB /* SanchoPrototypePythonEmbedding.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		034BDDB315C6555B00E1B4FB /* SanchoPrototypePythonEmbedding */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SanchoPrototypePythonEmbedding; sourceTree = BUILT_PRODUCTS_DIR; };
+		034BDDB715C6555B00E1B4FB /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		034BDDB915C6555B00E1B4FB /* SanchoPrototypePythonEmbedding.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = SanchoPrototypePythonEmbedding.1; sourceTree = "<group>"; };
+		034BDDC015C6559200E1B4FB /* Python.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Python.framework; path = System/Library/Frameworks/Python.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		034BDDB015C6555B00E1B4FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				034BDDC115C6559200E1B4FB /* Python.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		034BDDA815C6555B00E1B4FB = {
+			isa = PBXGroup;
+			children = (
+				034BDDB615C6555B00E1B4FB /* SanchoPrototypePythonEmbedding */,
+				034BDDC215C6559800E1B4FB /* Frameworks */,
+				034BDDB415C6555B00E1B4FB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		034BDDB415C6555B00E1B4FB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				034BDDB315C6555B00E1B4FB /* SanchoPrototypePythonEmbedding */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		034BDDB615C6555B00E1B4FB /* SanchoPrototypePythonEmbedding */ = {
+			isa = PBXGroup;
+			children = (
+				034BDDB715C6555B00E1B4FB /* main.c */,
+				034BDDB915C6555B00E1B4FB /* SanchoPrototypePythonEmbedding.1 */,
+			);
+			path = SanchoPrototypePythonEmbedding;
+			sourceTree = "<group>";
+		};
+		034BDDC215C6559800E1B4FB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				034BDDC015C6559200E1B4FB /* Python.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		034BDDB215C6555B00E1B4FB /* SanchoPrototypePythonEmbedding */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 034BDDBD15C6555B00E1B4FB /* Build configuration list for PBXNativeTarget "SanchoPrototypePythonEmbedding" */;
+			buildPhases = (
+				034BDDAF15C6555B00E1B4FB /* Sources */,
+				034BDDB015C6555B00E1B4FB /* Frameworks */,
+				034BDDB115C6555B00E1B4FB /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SanchoPrototypePythonEmbedding;
+			productName = SanchoPrototypePythonEmbedding;
+			productReference = 034BDDB315C6555B00E1B4FB /* SanchoPrototypePythonEmbedding */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		034BDDAA15C6555B00E1B4FB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = Joyfl;
+			};
+			buildConfigurationList = 034BDDAD15C6555B00E1B4FB /* Build configuration list for PBXProject "SanchoPrototypePythonEmbedding" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 034BDDA815C6555B00E1B4FB;
+			productRefGroup = 034BDDB415C6555B00E1B4FB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				034BDDB215C6555B00E1B4FB /* SanchoPrototypePythonEmbedding */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		034BDDAF15C6555B00E1B4FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				034BDDB815C6555B00E1B4FB /* main.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		034BDDBB15C6555B00E1B4FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		034BDDBC15C6555B00E1B4FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		034BDDBE15C6555B00E1B4FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		034BDDBF15C6555B00E1B4FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		034BDDAD15C6555B00E1B4FB /* Build configuration list for PBXProject "SanchoPrototypePythonEmbedding" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				034BDDBB15C6555B00E1B4FB /* Debug */,
+				034BDDBC15C6555B00E1B4FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		034BDDBD15C6555B00E1B4FB /* Build configuration list for PBXNativeTarget "SanchoPrototypePythonEmbedding" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				034BDDBE15C6555B00E1B4FB /* Debug */,
+				034BDDBF15C6555B00E1B4FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 034BDDAA15C6555B00E1B4FB /* Project object */;
+}
