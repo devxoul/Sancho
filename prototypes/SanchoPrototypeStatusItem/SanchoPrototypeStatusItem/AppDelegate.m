@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import <Carbon/Carbon.h>
 
 @implementation AppDelegate
 
@@ -17,7 +18,7 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
-	// Insert code here to initialize your application
+	[self registerHotKey];
 }
 
 - (void)awakeFromNib
@@ -26,6 +27,28 @@
 	[statusItem setTitle:@"Sancho"];
 	[statusItem setMenu:statusMenu];
 	[statusItem setHighlightMode:YES];
+}
+
+/**
+ * Reference : http://dbachrach.com/blog/2005/11/program-global-hotkeys-in-cocoa-easily/
+ */
+- (void)registerHotKey
+{
+	EventHotKeyRef hotKeyRef;
+	EventHotKeyID hotKeyId;
+	EventTypeSpec eventType;
+	eventType.eventClass = kEventClassKeyboard;
+	eventType.eventKind = kEventHotKeyPressed;
+	
+	// When hotkey event fired, hotKeyHandler is called.
+	InstallApplicationEventHandler( &hotKeyHandler, 1, &eventType, NULL, NULL );
+	
+	// 4byte character
+	hotKeyId.signature = 'xoul';
+	hotKeyId.id = 0;
+	
+	// Register hotkey. (option + command + space)
+	RegisterEventHotKey( 49, optionKey + cmdKey, hotKeyId, GetApplicationEventTarget(), 0, &hotKeyRef );
 }
 
 
@@ -46,6 +69,17 @@
 			exit( 0 );
 			break;
 	}
+}
+
+
+#pragma mark -
+#pragma mark HotKey
+
+OSStatus hotKeyHandler( EventHandlerCallRef nextHandler,EventRef theEvent, void *userData )
+{
+	NSLog( @"Hot Key" );
+	
+	return noErr;
 }
 
 @end

@@ -13,6 +13,7 @@
 		03BF678715C67CDA0032B51B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 03BF678615C67CDA0032B51B /* AppDelegate.m */; };
 		03BF679215C684330032B51B /* StatusMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03BF679015C680920032B51B /* StatusMenu.xib */; };
 		03BF679315C684330032B51B /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 03BF678215C67CDA0032B51B /* Credits.rtf */; };
+		03BF679515C6936F0032B51B /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03BF679415C6936F0032B51B /* Carbon.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		03BF678515C67CDA0032B51B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		03BF678615C67CDA0032B51B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		03BF679015C680920032B51B /* StatusMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StatusMenu.xib; sourceTree = "<group>"; };
+		03BF679415C6936F0032B51B /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03BF679515C6936F0032B51B /* Carbon.framework in Frameworks */,
 				03BF677415C67CDA0032B51B /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -64,6 +67,7 @@
 			isa = PBXGroup;
 			children = (
 				03BF677315C67CDA0032B51B /* Cocoa.framework */,
+				03BF679415C6936F0032B51B /* Carbon.framework */,
 				03BF677515C67CDA0032B51B /* Other Frameworks */,
 			);
 			name = Frameworks;
