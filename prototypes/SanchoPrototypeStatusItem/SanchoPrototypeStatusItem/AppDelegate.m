@@ -28,7 +28,8 @@ void *context;
 - (void)awakeFromNib
 {
 	statusItem = [[[NSStatusBar systemStatusBar] statusItemWithLength:NSVariableStatusItemLength] retain];
-	[statusItem setTitle:@"Sancho"];
+	[statusItem setImage:[NSImage imageNamed:@"statusicon_default.png"]];
+	[statusItem setAlternateImage:[NSImage imageNamed:@"statusicon_alt.png"]];
 	[statusItem setMenu:statusMenu];
 	[statusItem setHighlightMode:YES];
 }

@@ -14,6 +14,8 @@
 		03BF679215C684330032B51B /* StatusMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03BF679015C680920032B51B /* StatusMenu.xib */; };
 		03BF679315C684330032B51B /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 03BF678215C67CDA0032B51B /* Credits.rtf */; };
 		03BF679515C6936F0032B51B /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03BF679415C6936F0032B51B /* Carbon.framework */; };
+		03BF679B15C6CFFA0032B51B /* statusicon_alt.png in Resources */ = {isa = PBXBuildFile; fileRef = 03BF679915C6CFFA0032B51B /* statusicon_alt.png */; };
+		03BF679C15C6CFFA0032B51B /* statusicon_default.png in Resources */ = {isa = PBXBuildFile; fileRef = 03BF679A15C6CFFA0032B51B /* statusicon_default.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +33,8 @@
 		03BF678615C67CDA0032B51B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		03BF679015C680920032B51B /* StatusMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StatusMenu.xib; sourceTree = "<group>"; };
 		03BF679415C6936F0032B51B /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
+		03BF679915C6CFFA0032B51B /* statusicon_alt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = statusicon_alt.png; path = ../../../resources/statusicon_alt.png; sourceTree = "<group>"; };
+		03BF679A15C6CFFA0032B51B /* statusicon_default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = statusicon_default.png; path = ../../../resources/statusicon_default.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +54,7 @@
 			isa = PBXGroup;
 			children = (
 				03BF677915C67CDA0032B51B /* SanchoPrototypeStatusItem */,
+				03BF679615C6CF470032B51B /* Resources */,
 				03BF677215C67CDA0032B51B /* Frameworks */,
 				03BF677015C67CDA0032B51B /* Products */,
 			);
@@ -106,6 +111,16 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		03BF679615C6CF470032B51B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				03BF679915C6CFFA0032B51B /* statusicon_alt.png */,
+				03BF679A15C6CFFA0032B51B /* statusicon_default.png */,
+			);
+			name = Resources;
+			path = SanchoPrototypeStatusItem;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -160,6 +175,8 @@
 				03BF679215C684330032B51B /* StatusMenu.xib in Resources */,
 				03BF679315C684330032B51B /* Credits.rtf in Resources */,
 				03BF677E15C67CDA0032B51B /* InfoPlist.strings in Resources */,
+				03BF679B15C6CFFA0032B51B /* statusicon_alt.png in Resources */,
+				03BF679C15C6CFFA0032B51B /* statusicon_default.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
