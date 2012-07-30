@@ -11,6 +11,9 @@
 
 @implementation AppDelegate
 
+// reference to self
+void *context;
+
 - (void)dealloc
 {
     [super dealloc];
@@ -18,6 +21,7 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
+	context = self;
 	[self registerHotKey];
 }
 
@@ -75,11 +79,16 @@
 #pragma mark -
 #pragma mark HotKey
 
-OSStatus hotKeyHandler( EventHandlerCallRef nextHandler,EventRef theEvent, void *userData )
+OSStatus hotKeyHandler( EventHandlerCallRef nextHandler, EventRef theEvent, void *userData )
 {
-	NSLog( @"Hot Key" );
-	
+	[(AppDelegate *)context openSancho];
 	return noErr;
 }
 
+- (void)openSancho
+{
+	[[NSAlert alertWithMessageText:@"Sancho" defaultButton:@"Nice to meet you!" alternateButton:nil otherButton:nil informativeTextWithFormat:@"Hello, I'm Sancho!"] runModal];
+}
+
 @end
+

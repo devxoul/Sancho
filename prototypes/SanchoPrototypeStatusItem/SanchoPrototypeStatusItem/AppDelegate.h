@@ -15,5 +15,6 @@
 }
 
 - (IBAction)statusMenuItemDidTouchUpInside:(id)sender;
+- (void)openSancho;
 
 @end
