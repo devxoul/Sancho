@@ -18,6 +18,8 @@
 		0392535115EB1290004EE1F9 /* statusicon_default.png in Resources */ = {isa = PBXBuildFile; fileRef = 0392534F15EB1290004EE1F9 /* statusicon_default.png */; };
 		0392536515EB20B9004EE1F9 /* Sancho.m in Sources */ = {isa = PBXBuildFile; fileRef = 0392536415EB20B9004EE1F9 /* Sancho.m */; };
 		03C74B6815EB2A5600C3A1F3 /* SanchoWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C74B6715EB2A5600C3A1F3 /* SanchoWindow.m */; };
+		03C74B6F15EB318F00C3A1F3 /* PluginLauncher.c in Sources */ = {isa = PBXBuildFile; fileRef = 03C74B6E15EB318F00C3A1F3 /* PluginLauncher.c */; };
+		03C74B7115EB31AD00C3A1F3 /* Python.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03C74B7015EB31AD00C3A1F3 /* Python.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +43,9 @@
 		0392536415EB20B9004EE1F9 /* Sancho.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Sancho.m; sourceTree = "<group>"; };
 		03C74B6615EB2A5600C3A1F3 /* SanchoWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SanchoWindow.h; sourceTree = "<group>"; };
 		03C74B6715EB2A5600C3A1F3 /* SanchoWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SanchoWindow.m; sourceTree = "<group>"; };
+		03C74B6E15EB318F00C3A1F3 /* PluginLauncher.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = PluginLauncher.c; sourceTree = "<group>"; };
+		03C74B7015EB31AD00C3A1F3 /* Python.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Python.framework; path = System/Library/Frameworks/Python.framework; sourceTree = SDKROOT; };
+		03C74B7215EB32DD00C3A1F3 /* PluginLauncher.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PluginLauncher.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03C74B7115EB31AD00C3A1F3 /* Python.framework in Frameworks */,
 				030623B715E372CC002D8043 /* Carbon.framework in Frameworks */,
 				0306239215E3727F002D8043 /* Cocoa.framework in Frameworks */,
 			);
@@ -77,8 +83,9 @@
 		0306239015E3727F002D8043 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				030623B615E372CC002D8043 /* Carbon.framework */,
 				0306239115E3727F002D8043 /* Cocoa.framework */,
+				030623B615E372CC002D8043 /* Carbon.framework */,
+				03C74B7015EB31AD00C3A1F3 /* Python.framework */,
 				0306239315E3727F002D8043 /* Other Frameworks */,
 			);
 			name = Frameworks;
@@ -104,6 +111,8 @@
 				0392536415EB20B9004EE1F9 /* Sancho.m */,
 				03C74B6615EB2A5600C3A1F3 /* SanchoWindow.h */,
 				03C74B6715EB2A5600C3A1F3 /* SanchoWindow.m */,
+				03C74B7215EB32DD00C3A1F3 /* PluginLauncher.h */,
+				03C74B6E15EB318F00C3A1F3 /* PluginLauncher.c */,
 				0306239815E3727F002D8043 /* Supporting Files */,
 			);
 			path = Sancho;
@@ -200,6 +209,7 @@
 				030623A515E3727F002D8043 /* AppDelegate.m in Sources */,
 				0392536515EB20B9004EE1F9 /* Sancho.m in Sources */,
 				03C74B6815EB2A5600C3A1F3 /* SanchoWindow.m in Sources */,
+				03C74B6F15EB318F00C3A1F3 /* PluginLauncher.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

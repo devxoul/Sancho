@@ -7,6 +7,7 @@
 //
 
 #import "Sancho.h"
+#import "PluginLauncher.h"
 
 @implementation Sancho
 
@@ -15,9 +16,12 @@
 	self = [super init];
 	
 	window = [[SanchoWindow alloc] init];
+	
 	textField = [[NSTextField alloc] initWithFrame:NSMakeRect( 10, 20, 580, 60 )];
 	[textField setFont:[NSFont systemFontOfSize:40]];
 	[window.contentView addSubview:textField];
+	
+	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(textDidChange) name:NSControlTextDidChangeNotification object:nil];
 	
 	return self;
 }
@@ -36,5 +40,15 @@
 {
 	
 }
+
+
+#pragma mark -
+#pragma mark NSTextFieldDelegate
+
+- (void)textDidChange
+{	
+	launch( [textField.stringValue cStringUsingEncoding:NSASCIIStringEncoding] );
+}
+
 
 @end
